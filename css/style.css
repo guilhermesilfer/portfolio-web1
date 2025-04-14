@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'Special_Gothic_Condensed_One';
+  src: url(fonts/Special_Gothic_Condensed_One/SpecialGothicCondensedOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Special Gothic Expanded One';
+  src: url(fonts/Special_Gothic_Expanded_One/SpecialGothicExpandedOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url(fonts/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Bold Italic';
+  src: url(fonts/Lato/Lato-BoldItalic.ttf);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.main-div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* -------------- NAV -------------- */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1D1D1D;
+  padding: 10px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato Black';
+}
+
+#projects,
+#who-am-i,
+#languages {
+  scroll-margin-top: 75px;
+}
+
+/* -------------- PROFILE -------------- */
+#who-am-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: #111;
+}
+
+.pfp {
+  width: 400px;
+  height: 400px;
+  padding: 25px;
+  border-radius: 250px;
+}
+
+.who-am-i-txt {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 25px;
+}
+
+.name {
+  font-family: 'Special Gothic Expanded One';
+  font-weight: 500;
+  font-size: 40pt;
+  color: white;
+}
+
+.about-me {
+  font-weight: 450;
+  font-size: 14pt;
+  text-align: justify;
+  color: white;
+}
+
+.black-white-fade {
+  background-color: #111;
+  height: 40px;
+  mask-image: linear-gradient(to top, rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 1));
+  z-index: 1;
+}
+
+/* -------------- LANGUAGES -------------- */
+
+#languages {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 30px;
+}
+
+.used-lang-txt {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding-bottom: 18px;
+  font-family: 'Special_Gothic_Condensed_One';
+  font-weight: 400;
+  font-size: 20pt;
+  transform: scale(1.2, 1);
+}
+
+.lang-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 22%;
+  margin-right: 22%;
+  width: 56%;
+}
+
+.lang-img {
+  width: 120px;
+  height: 120px;
+}
+
+
+.white-grey-fade {
+  background-color: #121212;
+  height: 40px;
+  mask-image: linear-gradient(to top, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0.6));
+  z-index: 1;
+}
+
+/* -------------- PROJECTS -------------- */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-projects-txt {
+  font-family: 'Special_Gothic_Expanded_One';
+  font-weight: 900;
+  font-size: 25pt;
+  text-align: center;
+  color: white;
+}
+
+.my-projects-box {
+  width: 100%;
+  background-color: #121212;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.project.reversed {
+  flex-direction: row-reverse;
+}
+
+.project.lightgrey {
+  background-color: #222;
+}
+
+.project.grey {
+  background-color: #131313;
+}
+
+.project-img {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  padding: 20px;
+  margin: 0px;
+  color: white;
+  font-family: 'Special Gothic Condensed One';
+  font-weight: 800;
+  font-size: 25pt;
+}
+
+.project-txt {
+  padding: 20px;
+  margin: 0px;
+  color: white;
+  font-family: 'Lato Black';
+  text-align: justify;
+}
+
+.project.reversed .project-title {
+  text-align: end;
+}
+
+hr {
+  margin: 0px;
+  width: 100%;
+}
+
+/* -------------- RODAPÉ -------------- */
+
+#contact {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px;
+  border-style: none;
+  border-top: dashed white;
+  border-width: 2px;
+  background-color: #1A1A1A;
+}
+
+#contact a {
+  text-decoration: none;
+  color: black;
+  background-color: #EEE;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+}
+
+#contact a:hover {
+  background-color: #BBB;
+}
